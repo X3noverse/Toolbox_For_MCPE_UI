@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8.0dip"
+    android:orientation="horizontal"
+    android:tag="layout/list_command_header_0">
+
+    <Button
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/light_gray_button"
+        android:fontFamily="@font/moj"
+        android:gravity="center"
+        android:tag="binding_1"
+        android:text="@string/action_add_command"
+        android:textColor="#ff4a4d4a"
+        android:textSize="18.0sp" />
+
+    <ImageButton
+        android:contentDescription="@string/action_edit_command"
+        android:layout_marginStart="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8.0dip"
+        android:background="@drawable/button_1"
+        android:src="@drawable/ic_edit"
+        android:tag="binding_2"/>
+</LinearLayout>

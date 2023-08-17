@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/editText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4.0dip"
+    android:layout_marginEnd="4.0dip"
+    android:background="@drawable/edit_text_bg"
+    android:fontFamily="@font/moj"
+    android:hint="@string/name_override_hint"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:singleLine="true"
+    android:tag="layout/list_text_edit_0"
+    android:textSize="18.0sp" />

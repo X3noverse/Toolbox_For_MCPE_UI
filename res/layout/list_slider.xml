@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="16.0dip"
+    android:paddingEnd="24.0dip"
+    android:paddingBottom="4.0dip"
+    android:paddingTop="4.0dip"
+    android:tag="layout/list_slider_0">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/moj"
+        android:gravity="left"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:tag="binding_1"
+        android:text="Slider"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/seekbar_track"
+
+        app:isb_indicator_color="#805E5E5E"
+        app:isb_indicator_text_color="#ffffff"
+        app:isb_show_indicator="rectangle"
+
+        app:isb_show_tick_marks_type="square"
+        app:isb_thumb_drawable="@drawable/seekbar_thumb"
+
+        app:isb_thumb_size="31dp"
+        app:isb_tick_marks_drawable="@drawable/selector_tick_marks_drawable"
+        app:isb_tick_marks_size="12.0dip"
+
+        app:isb_track_background_color="#404040"
+        app:isb_track_background_size="18.0dip"
+        app:isb_track_progress_color="#808080"
+        app:isb_track_progress_size="18.0dip" >
+    </com.warkiz.widget.IndicatorSeekBar>
+
+</LinearLayout>

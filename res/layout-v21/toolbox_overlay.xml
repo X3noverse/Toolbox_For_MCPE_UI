@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@style/AppTheme.AccentPrimary">
+
+    <LinearLayout
+        android:id="@id/category_frame"
+        android:layout_width="220.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/categories_ui"
+        android:orientation="vertical"
+        android:paddingLeft="14.0dip"
+        android:paddingTop="13.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingBottom="14.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/moj"
+                android:text="Categories"
+                android:textColor="#ff4a4d4a"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/categories"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#70313233"
+            android:clipToPadding="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/options_frame"
+        android:layout_width="320.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/options_ui"
+        android:orientation="vertical"
+        android:paddingLeft="13.0dip"
+        android:paddingTop="14.0dip"
+        android:paddingRight="13.0dip"
+        android:paddingBottom="14.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/moj"
+                android:text="Options"
+                android:textColor="#ff4a4d4a"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/options"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#70313233"
+            android:clipToPadding="false"
+            android:elevation="12.0dip"
+            android:padding="8.0dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/middle_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toStartOf="@id/options_frame"
+        android:layout_toEndOf="@id/category_frame">
+
+        <TextView
+            android:id="@id/remaining_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="16.0dip"
+            android:background="@drawable/button_2"
+            android:fontFamily="@font/moj"
+            android:gravity="center"
+            android:paddingStart="12.0dip"
+            android:paddingEnd="12.0dip"
+            android:text="14m 37s"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ff4a4d4a"
+            android:textSize="16.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center">
+
+            <ImageView
+                android:id="@id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:background="@drawable/settings_icon_background"
+                android:padding="12.0dip"
+                android:src="@drawable/ic_cog" />
+
+            <ImageView
+                android:id="@id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:background="@drawable/settings_icon_background"
+                android:padding="8.0dip"
+                android:src="@drawable/ic_info" />
+
+            <ImageView
+                android:id="@id/discord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:background="@drawable/settings_icon_background"
+                android:padding="12.0dip"
+                android:src="@drawable/ic_discord" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
