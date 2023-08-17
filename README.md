@@ -1,9 +1,6 @@
 # Toolbox For MCPE UI
 This is a Toolbox For MCPE UI similar to Minecraft's UI
 
-You need 'APK EASY TOOL' in order to compile it.
-But i'll make sure to always release an APK too in case you want to decompile and edit it with a different tool.
-
 #TO-DO List:
 ~ App Icon
 ~ Color picker Dialog UI
